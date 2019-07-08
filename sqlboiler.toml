@@ -1,0 +1,20 @@
+output = "db"
+pkgname = "db"
+no-context = true
+
+[psql]
+  dbname = "pie"
+  host   = "localhost"
+  port   = 5432
+  user   = "pie"
+  pass   = "dev"
+  schema = "public"
+  blacklist = ["migrations", "other"]
+  sslmode = "disable"
+
+
+[aliases.tables.pies]
+up_plural = "Pies"
+up_singular = "Pie"
+down_plural = "pies"
+down_singular = "pie"

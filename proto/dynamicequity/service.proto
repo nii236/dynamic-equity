@@ -1,0 +1,61 @@
+syntax = "proto3";
+
+package dynamicequity;
+service Auth {
+    rpc SignIn(SignInRequest) returns (SignInResponse);
+    rpc SignOut(SignOutRequest) returns (SignOutResponse);
+    rpc SignUp(SignUpRequest) returns (SignUpResponse);
+}
+service Pie {    
+    rpc List(PieListRequest) returns (PieListResponse);
+    rpc Create(PieCreateRequest) returns (PieCreateResponse);
+    rpc Archive(PieArchiveRequest) returns (PieArchiveResponse);
+    rpc ProjectList(PieProjectListRequest) returns (PieProjectListResponse);
+    rpc ProjectAdd(PieProjectAddRequest) returns (PieProjectAddResponse);
+    rpc ProjectArchive(PieProjectArchiveRequest) returns (PieProjectArchiveResponse);
+    rpc UserList(PieUserListRequest) returns (PieUserListResponse);
+    rpc UserAdd(PieUserAddRequest) returns (PieUserAddResponse);
+    rpc UserRemove(PieUserRemoveRequest) returns (PieUserRemoveResponse);
+    rpc ChunkList(PieChunkListRequest) returns (PieChunkListResponse);
+    rpc ChunkCreate(PieChunkCreateRequest) returns (PieChunkCreateResponse);
+    rpc ChunkApprove(PieChunkApproveRequest) returns (PieChunkApproveResponse);
+    rpc ChunkReject(PieChunkRejectRequest) returns (PieChunkRejectResponse);
+}
+
+message SignInRequest {};
+message SignInResponse {};
+message SignOutRequest {};
+message SignOutResponse {};
+message SignUpRequest {};
+message SignUpResponse {};
+
+
+message PieListRequest {};
+message PieListResponse {};
+message PieCreateRequest {};
+message PieCreateResponse {};
+message PieArchiveRequest {};
+message PieArchiveResponse {};
+
+message PieProjectListRequest {};
+message PieProjectListResponse {};
+message PieProjectAddRequest {};
+message PieProjectAddResponse {};
+message PieProjectArchiveRequest {};
+message PieProjectArchiveResponse {};
+
+message PieUserListRequest {};
+message PieUserListResponse {};
+message PieUserAddRequest {};
+message PieUserAddResponse {};
+message PieUserRemoveRequest {};
+message PieUserRemoveResponse {};
+
+message PieChunkListRequest {};
+message PieChunkListResponse {};
+message PieChunkCreateRequest {};
+message PieChunkCreateResponse {};
+message PieChunkApproveRequest {};
+message PieChunkApproveResponse {};
+message PieChunkRejectRequest {};
+message PieChunkRejectResponse {};

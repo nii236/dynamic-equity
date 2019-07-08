@@ -5,3 +5,14 @@
 > Slicing Pie is a universal, one-size-fits all model that creates a perfectly fair equity split in an early-stage, bootstrapped start-up company.
 
 More information [here](https://slicingpie.com)
+
+# Database
+
+```
+docker run -d -p 5432:5432 \
+--name pie-db \
+-e POSTGRES_USER=pie \
+-e POSTGRES_PASSWORD=dev \
+-e POSTGRES_DB=pie \
+postgres:11-alpine
+```
